@@ -1,119 +1,119 @@
 {
-    "accessControl": true,
-    "activateEquipment": true,
-    "adCount": 5,
-    "adEight": "ad_images/8.jpeg",
-    "adFive": "ad_images/5.jpeg",
-    "adFour": "ad_images/4.jpeg",
-    "adNine": "ad_images/9.jpeg",
-    "adOne": "ad_images/1.jpeg",
-    "adSeven": "ad_images/7.jpeg",
-    "adSix": "ad_images/6.jpeg",
-    "adTen": "ad_images/10.jpeg",
-    "adThree": "ad_images/3.jpeg",
-    "adTwo": "ad_images/2.jpeg",
-    "address": "128.0.0.1",
-    "automaticCarCharging": true,
-    "automaticMotoCharging": true,
-    "barcodePort": "dev usb/3",
-    "clientCode": "1616",
-    "closedGateSensor": true,
+    "accessControl": false,
+    "activateEquipment": false,
+    "adCount": 0,
+    "adEight": "",
+    "adFive": "",
+    "adFour": "",
+    "adNine": "",
+    "adOne": "",
+    "adSeven": "",
+    "adSix": "",
+    "adTen": "",
+    "adThree": "",
+    "adTwo": "",
+    "address": "",
+    "automaticCarCharging": false,
+    "automaticMotoCharging": false,
+    "barcodePort": "",
+    "clientCode": "",
+    "closedGateSensor": false,
     "codeCardFormat": false,
-    "expansionPort": "dev usb/1",
-    "fullCourtyard": true,
-    "interphoneIP": "192.168.0.1",
-    "mensalistType": 1,
+    "expansionPort": "",
+    "fullCourtyard": false,
+    "interphoneIP": "",
+    "mensalistType": 0,
     "messagesEntry": {
         "clearedToGo": {
-            "icon": "default_icons/thumbsUp.svg",
+            "icon": "",
             "text": "Passagem liberada!"
         },
         "empty": {
-            "icon": "default_icons/info.svg",
+            "icon": "",
             "text": ""
         },
         "invalid": {
-            "icon": "default_icons/sad.svg",
+            "icon": "",
             "text": "Inválido"
         },
         "parkingFull": {
-            "icon": "default_icons/info.svg",
+            "icon": "",
             "text": "Estacionamento lotado"
         },
         "pressButton": {
-            "icon": "default_icons/thumbsUp.svg",
+            "icon": "",
             "text": "Pressione o botão"
         },
         "removeTicket": {
-            "icon": "default_icons/info.svg",
+            "icon": "",
             "text": "Retire seu ticket"
         },
         "validateTicket": {
-            "icon": "default_icons/waitTicket.svg",
+            "icon": "",
             "text": "Valide seu ticket"
         },
         "welcome": {
-            "icon": "default_icons/happy.svg",
+            "icon": "",
             "text": "Seja bem-vindo!"
         }
     },
     "messagesExit": {
         "clearedToGo": {
-            "icon": "default_icons/thumbsUp.svg",
+            "icon": "",
             "text": "Obrigado e até logo!"
         },
         "empty": {
-            "icon": "default_icons/info.svg",
+            "icon": "",
             "text": ""
         },
         "errorReadingCard": {
-            "icon": "default_icons/info.svg",
+            "icon": "",
             "text": "Erro na leitura do cartão."
         },
         "goToAdministration": {
-            "icon": "default_icons/sad.svg",
+            "icon": "",
             "text": "Compareça à administração."
         },
         "insertCard": {
-            "icon": "default_icons/happy.svg",
+            "icon": "",
             "text": "Insira o seu cartão ou ticket."
         },
         "nonAuthorized": {
-            "icon": "default_icons/thumbsDown.svg",
+            "icon": "",
             "text": "Não autorizado."
         },
         "validateTicket": {
-            "icon": "default_icons/sad.svg",
+            "icon": "",
             "text": "Valide seu ticket"
         },
         "vehicleDoesntMatch": {
-            "icon": "default_icons/info.svg",
+            "icon": "",
             "text": "Veiculo não corresponde ao veiculo de entrada."
         }
     },
     "messagesGeneral": {
         "IOError": {
-            "icon": "default_icons/sad.svg",
+            "icon": "",
             "text": "Erro na comunicação com a placa de expansão."
         },
         "serverError": {
-            "icon": "default_icons/sad.svg",
+            "icon": "",
             "text": "Erro na comunicação com o servidor"
         },
         "testIO": {
-            "icon": "default_icons/info.svg",
+            "icon": "",
             "text": "Testando placa de expansão. Aguarde."
         },
         "tryConnect": {
-            "icon": "default_icons/waitTicket.svg",
+            "icon": "",
             "text": "Tentando conectar-se ao servidor. Aguarde."
         }
     },
-    "openedGateSensor": true,
-    "paperSensor": true,
+    "openedGateSensor": false,
+    "paperSensor": false,
     "personalizedMensalistCardCode": "",
-    "printerPort": "dev usb/4",
-    "rfidPort": "dev usb/2",
+    "printerPort": "",
+    "rfidPort": "",
     "type": 0,
-    "useDefaultIcons": true
+    "useDefaultIcons": false
 }

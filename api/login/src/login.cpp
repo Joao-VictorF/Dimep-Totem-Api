@@ -6,10 +6,12 @@
 
 using json = nlohmann::json;
 
-LoginResponse login::loginRoute(User user) {   
+LoginResponse login::loginRoute(User user) {  
+    std::string invalidCredetialsText = encodeText("Usuário ou senha incorretos!");
+
     LoginResponse res = {
         false,
-        "Usuário ou senha incorretos!",
+        invalidCredetialsText,
         ""
     };
 
@@ -24,7 +26,7 @@ LoginResponse login::loginRoute(User user) {
         std::string token = generate_token(20);
 
         res.success = true;
-        res.message = "Login realizado com sucesso!",
+        res.message = encodeText("Login realizado com sucesso!");
         res.token   = token;
     }
 
@@ -32,9 +34,11 @@ LoginResponse login::loginRoute(User user) {
 }
 
 LoginResponse login::updateRoute(std::string token, User user) { 
+    std::string invalidTokenText = encodeText("Token inválido, faça o login novamente!");
+
     LoginResponse res = {
         false,
-        "Token inválido, faça login novamente!",
+        invalidTokenText,
         ""
     };
 
@@ -48,7 +52,7 @@ LoginResponse login::updateRoute(std::string token, User user) {
         userFile << std::setw(4) << userJson << std::endl;
         
         res.success = true;
-        res.message = "Usuário atualizado com sucesso!";
+        res.message = encodeText("Usuário atualizado com sucesso!");
         res.token = get_token();
 
     } 

@@ -17,14 +17,14 @@ Response api::updateConfig(std::string token, Config newConfig) {
         
         Response res = {
             true,
-            "Configurações atualizadas com sucesso!"
+            encodeText("Configurações atualizadas com sucesso!")
         };
 
         return res;
     } else {
         Response res = {
             false,
-            "Token inválido, faça login novamente!"
+            encodeText("Token inválido, faça login novamente!")
         };
 
         return res;

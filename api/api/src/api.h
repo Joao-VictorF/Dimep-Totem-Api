@@ -99,12 +99,6 @@ struct Response {
     std::string message;
 };
 
-struct GetResponse {
-    bool success;
-    std::string message;
-    Config config;
-};
-
 class api: public ngrest::Service
 {
 public:
