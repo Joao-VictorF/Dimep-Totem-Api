@@ -4,8 +4,10 @@
 Response api::updateConfig(std::string token, Config newConfig) {
     if (verify_token(token)) {
         newConfig = saveAds(newConfig);
+        
+        bool useDefaultIcons = compare_strings("true", newConfig.useDefaultIcons);
 
-        if(newConfig.useDefaultIcons == true) {
+        if(useDefaultIcons == true) {
             newConfig = setDefaultIcons(newConfig);
         } else {
             newConfig = savePersonalizedIcons(newConfig);

@@ -1,7 +1,7 @@
 {
-    "accessControl": false,
-    "activateEquipment": false,
-    "adCount": 0,
+    "accessControl": "",
+    "activateEquipment": "",
+    "adCount": "",
     "adEight": "",
     "adFive": "",
     "adFour": "",
@@ -13,16 +13,15 @@
     "adThree": "",
     "adTwo": "",
     "address": "",
-    "automaticCarCharging": false,
-    "automaticMotoCharging": false,
+    "automaticCarCharging": "",
+    "automaticMotoCharging": "",
     "barcodePort": "",
     "clientCode": "",
-    "closedGateSensor": false,
-    "codeCardFormat": false,
+    "closedGateSensor": "",
+    "codeCardFormat": "",
     "expansionPort": "",
-    "fullCourtyard": false,
+    "fullCourtyard": "",
     "interphoneIP": "",
-    "mensalistType": 0,
     "messagesEntry": {
         "clearedToGo": {
             "icon": "",
@@ -109,11 +108,10 @@
             "text": "Tentando conectar-se ao servidor. Aguarde."
         }
     },
-    "openedGateSensor": false,
-    "paperSensor": false,
-    "personalizedMensalistCardCode": "",
+    "openedGateSensor": "",
+    "paperSensor": "",
     "printerPort": "",
     "rfidPort": "",
-    "type": 0,
-    "useDefaultIcons": false
+    "type": "",
+    "useDefaultIcons": ""
 }

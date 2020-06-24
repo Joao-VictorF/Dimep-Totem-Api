@@ -48,6 +48,9 @@
         "ctime": "cpp",
         "iomanip": "cpp",
         "bitset": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "cstring": "cpp",
+        "forward_list": "cpp",
+        "valarray": "cpp"
     }
 }

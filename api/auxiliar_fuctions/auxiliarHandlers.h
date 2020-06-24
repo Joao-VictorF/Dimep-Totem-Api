@@ -163,8 +163,6 @@ void save_config(Config newConfig) {
 		{"clientCode",                    newConfig.clientCode},
 		{"address",                       newConfig.address},
 		{"interphoneIP",                  newConfig.interphoneIP},
-		{"mensalistType",                 newConfig.mensalistType},
-		{"personalizedMensalistCardCode", newConfig.personalizedMensalistCardCode},
 		{"codeCardFormat",                newConfig.codeCardFormat},
 		{"paperSensor",                   newConfig.paperSensor},
 		{"openedGateSensor",              newConfig.openedGateSensor},
@@ -328,7 +326,7 @@ void save_config(Config newConfig) {
         },
     };
 
-    std::ofstream configFile("../configuration.json");
+    std::ofstream configFile("../settings.json");
     configFile << std::setw(4) << j << std::endl;
 }
 
@@ -394,7 +392,7 @@ std::string image_to_base64(std::string path) {
 }
 
 Config configJson_to_base64() {
-    std::ifstream configFile ("../configuration.json");
+    std::ifstream configFile ("../settings.json");
     json j;
     configFile >> j;
 
@@ -403,8 +401,6 @@ Config configJson_to_base64() {
         j["clientCode"],
         j["address"],
         j["interphoneIP"],
-        j["mensalistType"],
-        j["personalizedMensalistCardCode"],
         j["codeCardFormat"],
         j["paperSensor"],
 		j["openedGateSensor"],

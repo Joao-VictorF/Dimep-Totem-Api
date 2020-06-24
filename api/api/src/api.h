@@ -45,40 +45,25 @@ struct MessagesExit {
 };
 
 struct Config {
-    enum class TotemType {
-        Entrada,
-        Saida
-    };
-    
-    enum class MensalistCardType {
-        Intercalado,
-        ACURA,
-        MIFARE,
-        ABA,
-        Personalizado
-    };
-
-    TotemType type;
+    std::string type;
     std::string clientCode;
     std::string address;
     std::string interphoneIP;
-    MensalistCardType mensalistType;
-    std::string personalizedMensalistCardCode;
-    bool codeCardFormat;
-    bool paperSensor;
-    bool openedGateSensor;
-    bool closedGateSensor;
-    bool automaticCarCharging;
-    bool automaticMotoCharging;
-    bool activateEquipment;
-    bool fullCourtyard;
-    bool accessControl;
+    std::string codeCardFormat;
+    std::string paperSensor;
+    std::string openedGateSensor;
+    std::string closedGateSensor;
+    std::string automaticCarCharging;
+    std::string automaticMotoCharging;
+    std::string activateEquipment;
+    std::string fullCourtyard;
+    std::string accessControl;
     std::string expansionPort;
     std::string rfidPort;
     std::string barcodePort;
     std::string printerPort;
-    bool useDefaultIcons;
-    int adCount;
+    std::string useDefaultIcons;
+    std::string adCount;
     std::string adOne;
     std::string adTwo;
     std::string adThree;
