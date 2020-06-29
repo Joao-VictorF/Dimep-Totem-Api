@@ -142,7 +142,7 @@ std::string saveImage(std::string base64, std::string folder, std::string name) 
 std::string image_to_string(std::string filename) {
   std::ostringstream ostrm;   
 
-  std::cout << "Path to image " << filename << '\n';
+  //std::cout << "Path to image " << filename << '\n';
   
   std::ifstream imgfile("../" + filename, ios::binary);
   ostrm << imgfile.rdbuf();

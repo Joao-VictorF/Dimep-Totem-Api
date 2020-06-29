@@ -1,7 +1,7 @@
 {
     "accessControl": "",
     "activateEquipment": "",
-    "adCount": "",
+    "adCount": "0",
     "adEight": "",
     "adFive": "",
     "adFour": "",
@@ -113,5 +113,5 @@
     "printerPort": "",
     "rfidPort": "",
     "type": "",
-    "useDefaultIcons": ""
+    "useDefaultIcons": "true"
 }

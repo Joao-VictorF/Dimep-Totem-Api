@@ -10,16 +10,17 @@ struct User {
 
 struct LoginResponse {
     bool success;
+    bool firstAccess;
     std::string message;
     std::string token;
 };
 
-// *location: login
+// *location: loginRoute
 class login: public ngrest::Service
 {
 public:
     
-    // *location: /
+    // *location: /login
     // *method: POST
     LoginResponse loginRoute(User user);
 

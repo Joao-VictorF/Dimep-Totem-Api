@@ -429,7 +429,7 @@ Config configJson_to_base64() {
         image_to_base64(j["adTen"]),
     };
 
-    if(j["useDefaultIcons"] == false) {
+    if(compare_strings(j["useDefaultIcons"], "false")) {
         config.messagesGeneral.IOError.icon         =  image_to_base64(j["messagesGeneral"]["IOError"]["icon"]);
         config.messagesGeneral.serverError.icon     =  image_to_base64(j["messagesGeneral"]["serverError"]["icon"]);
         config.messagesGeneral.tryConnect.icon      =  image_to_base64(j["messagesGeneral"]["tryConnect"]["icon"]);

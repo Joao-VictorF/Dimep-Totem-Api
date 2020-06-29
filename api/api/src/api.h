@@ -88,11 +88,11 @@ class api: public ngrest::Service
 {
 public:
     // *method: POST
-    // *location: /
+    // *location: /update
     Response updateConfig(std::string token, Config config);
 
-    // *method: GET
-    // *location: /
+    // *method: POST
+    // *location: /get
     Config getConfig(std::string token);
 };
 
